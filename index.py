@@ -12,3 +12,7 @@ def other_func(z):
         x += i
         
     return x    
+
+
+def untested():
+    print("herllo")
