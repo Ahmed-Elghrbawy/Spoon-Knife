@@ -12,5 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print ref
+        if: contains(env.GITHUB_REF, 'refs/tags/')
         run: |
-          echo "$GITHUB_REF"
+          echo env.GITHUB_REF
+          echo "yes it contains"
