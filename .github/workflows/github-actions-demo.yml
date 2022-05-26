@@ -9,7 +9,7 @@ on:
       
 jobs:
   hello:
-    if: contains(env.GITHUB_REF, 'refs/tags/')
+    if: ${{ contains(env.GITHUB_REF, 'refs/tags/') }} 
     runs-on: ubuntu-latest
     steps:
       - name: print ref
