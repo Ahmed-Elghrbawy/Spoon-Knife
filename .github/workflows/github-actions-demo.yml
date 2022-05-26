@@ -14,5 +14,5 @@ jobs:
       - name: print ref
         if: contains(env.GITHUB_REF, 'refs/tags/')
         run: |
-          echo env.GITHUB_REF
           echo "yes it contains"
+          echo $GITHUB_REF
